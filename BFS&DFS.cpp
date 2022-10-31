@@ -132,9 +132,9 @@ void TGrafo::DFS(int v) {
 int main() {
   random_device a;
   mt19937 gerador(a());
-  uniform_int_distribution<int> range(0, 9);
-  TGrafo g(10);
-  for (int i = 0; i < 10; i++) {
+  uniform_int_distribution<int> range(0, 99);
+  TGrafo g(100);
+  for (int i = 0; i < 100; i++) {
     for (int j = 0; j < 3; j++) {
       int x = range(gerador);
       if (i != x)
